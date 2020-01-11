@@ -6,8 +6,15 @@ import Appbar from './components/Appbar';
 import AppFooter from './components/AppFooter';
 import HeroHeader from './components/HeroHeader';
 import Cards from './components/Cards';
+import FreeWordsForm from './components/FreeWordsForm';
 
 const useStyles = makeStyles(theme => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: 200,
+    },
+  },
   icon: {
     marginRight: theme.spacing(2),
   },
@@ -48,6 +55,7 @@ const App = () => {
       <Appbar classes={classes} />
       <main>
         <HeroHeader classes={classes} />
+        <FreeWordsForm />
         <Cards classes={classes} />
       </main>
       <AppFooter classes={classes} />
