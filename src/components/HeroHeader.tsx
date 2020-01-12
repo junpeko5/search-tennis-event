@@ -1,7 +1,26 @@
 import React from 'react';
 import { Typography, Grid, Container, Button } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
-const HeroHeader = ({ classes }) => {
+const useStyles = makeStyles(theme => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: 200,
+    },
+  },
+  heroContent: {
+    backgroundColor: theme.palette.background.paper,
+    padding: theme.spacing(8, 0, 6),
+  },
+  heroButtons: {
+    marginTop: theme.spacing(4),
+  },
+}));
+
+const HeroHeader = () => {
+  const classes = useStyles();
+
   return (
     <div className={classes.heroContent}>
       <Container maxWidth="sm">
@@ -23,12 +42,12 @@ const HeroHeader = ({ classes }) => {
           <Grid container spacing={2} justify="center">
             <Grid item>
               <Button variant="contained" color="primary">
-                Main call to action
+                ログイン
               </Button>
             </Grid>
             <Grid item>
               <Button variant="outlined" color="primary">
-                Secondary action
+                新規登録
               </Button>
             </Grid>
           </Grid>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import {
   Typography,
   CardMedia,
@@ -10,7 +11,32 @@ import {
   Button,
 } from '@material-ui/core';
 
-const Cards = ({ classes }) => {
+const useStyles = makeStyles(theme => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(1),
+      width: 200,
+    },
+  },
+  cardGrid: {
+    paddingTop: theme.spacing(8),
+    paddingBottom: theme.spacing(8),
+  },
+  card: {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  cardMedia: {
+    paddingTop: '56.25%', // 16:9
+  },
+  cardContent: {
+    flexGrow: 1,
+  },
+}));
+
+const Cards = () => {
+  const classes = useStyles();
   const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   return (
