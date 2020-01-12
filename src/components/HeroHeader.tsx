@@ -12,7 +12,7 @@ const HeroHeader = ({ classes }) => {
           color="textPrimary"
           gutterBottom
         >
-          Album layout
+          テニスイベント検索
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" paragraph>
           Something short and leading about the collection below—its contents,

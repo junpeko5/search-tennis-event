@@ -9,7 +9,7 @@ const Appbar = ({ classes }) => (
     <Toolbar>
       <CameraIcon className={classes.icon} />
       <Typography variant="h6" color="inherit" noWrap>
-        Album layout
+        テニスイベント検索
       </Typography>
     </Toolbar>
   </AppBar>
