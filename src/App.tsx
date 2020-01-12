@@ -1,27 +1,34 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { CssBaseline } from '@material-ui/core';
 
 import Appbar from './components/Appbar';
+import Home from './components/Home';
+import Login from './components/Login';
+import SignUp from './components/SignUp';
 import AppFooter from './components/AppFooter';
-import HeroHeader from './components/HeroHeader';
-import Cards from './components/Cards';
-import FreeWordsForm from './components/FreeWordsForm';
-import Keywords from './components/Keywords';
-import Prefectures from './components/Prefectures';
 
 const App = () => {
   return (
     <>
-      <CssBaseline />
-      <Appbar />
-      <main>
-        <HeroHeader />
-        <FreeWordsForm />
-        <Keywords />
-        <Prefectures />
-        <Cards />
-      </main>
-      <AppFooter />
+      <Router>
+        <CssBaseline />
+        <Appbar />
+        <main>
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/login" exact>
+              <Login />
+            </Route>
+            <Route path="/signup" exact>
+              <SignUp />
+            </Route>
+          </Switch>
+        </main>
+        <AppFooter />
+      </Router>
     </>
   );
 };

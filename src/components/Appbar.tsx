@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import CameraIcon from '@material-ui/icons/PhotoCamera';
@@ -23,10 +24,14 @@ const Appbar = () => {
   return (
     <AppBar position="relative">
       <Toolbar>
-        <CameraIcon className={classes.icon} />
-        <Typography variant="h6" color="inherit" noWrap>
-          テニスイベント検索
-        </Typography>
+        <Link to="/">
+          <CameraIcon className={classes.icon} />
+        </Link>
+        <Link to="/">
+          <Typography variant="h6" color="inherit" noWrap>
+            テニスイベント検索
+          </Typography>
+        </Link>
       </Toolbar>
     </AppBar>
   );

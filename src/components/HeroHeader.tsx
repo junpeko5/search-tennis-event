@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Typography, Grid, Container, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -41,14 +42,18 @@ const HeroHeader = () => {
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
-              <Button variant="contained" color="primary">
-                ログイン
-              </Button>
+              <Link to="/login">
+                <Button variant="contained" color="primary">
+                  ログイン
+                </Button>
+              </Link>
             </Grid>
             <Grid item>
-              <Button variant="outlined" color="primary">
-                新規登録
-              </Button>
+              <Link to="/signup">
+                <Button variant="outlined" color="primary">
+                  新規登録
+                </Button>
+              </Link>
             </Grid>
           </Grid>
         </div>
