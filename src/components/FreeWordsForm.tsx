@@ -33,11 +33,12 @@ const FreeWordsForm = () => {
   return (
     <section className={classes.section}>
       <Container maxWidth="md">
+        <h3>フリーワードでイベント検索</h3>
         <Paper component="form" className={classes.root}>
           <InputBase
             className={classes.input}
             placeholder="イベントを検索"
-            inputProps={{ 'aria-label': 'search google maps' }}
+            inputProps={{ 'aria-label': 'イベントを検索' }}
           />
           <IconButton
             type="submit"
