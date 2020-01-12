@@ -42,14 +42,14 @@ const HeroHeader = () => {
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
-              <Link to="/login">
+              <Link to="/sign-in">
                 <Button variant="contained" color="primary">
                   ログイン
                 </Button>
               </Link>
             </Grid>
             <Grid item>
-              <Link to="/signup">
+              <Link to="/sign-up">
                 <Button variant="outlined" color="primary">
                   新規登録
                 </Button>

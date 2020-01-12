@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { CssBaseline } from '@material-ui/core';
 
 import Appbar from './components/Appbar';
 import Home from './components/Home';
-import Login from './components/Login';
+import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import AppFooter from './components/AppFooter';
 
@@ -19,10 +19,10 @@ const App = () => {
             <Route path="/" exact>
               <Home />
             </Route>
-            <Route path="/login" exact>
-              <Login />
+            <Route path="/sign-in" exact>
+              <SignIn />
             </Route>
-            <Route path="/signup" exact>
+            <Route path="/sign-up" exact>
               <SignUp />
             </Route>
           </Switch>
