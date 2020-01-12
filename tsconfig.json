@@ -27,9 +27,7 @@
     "tsBuildInfoFile": "./buildcache/tsbuildinfo",
     "jsx": "preserve",
     "outDir": "build",
-    "rootDirs": [
-      "src"
-    ]
+    "baseUrl": "src",
   },
   "include": [
     "src"
@@ -38,6 +36,7 @@
     "node_modules",
     "build",
     "dist",
-    "scripts"
+    "scripts",
+    "functions"
   ]
 }

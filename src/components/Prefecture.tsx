@@ -10,7 +10,7 @@ import StarBorder from '@material-ui/icons/StarBorder';
 import PlaceIcon from '@material-ui/icons/Place';
 
 const Prefecture = ({ pref, classes }) => {
-  const handleClick = e => {
+  const handleClick = () => {
     // setState(() => {
     // });
     // setState(!state.prefectures.open);

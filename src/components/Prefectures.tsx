@@ -35,7 +35,7 @@ const Prefectures = () => {
       { area: '九州', open: false },
     ],
   };
-  const [state, setState] = React.useState(initialState);
+  const [state] = React.useState(initialState);
 
   return (
     <List
