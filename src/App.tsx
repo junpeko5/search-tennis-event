@@ -7,6 +7,7 @@ import Home from './components/Home';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import AppFooter from './components/AppFooter';
+import Paperbase from './components/admin/Paperbase';
 
 const App = () => {
   return (
@@ -24,6 +25,9 @@ const App = () => {
             </Route>
             <Route path="/sign-up" exact>
               <SignUp />
+            </Route>
+            <Route path="/admin" exact>
+              <Paperbase />
             </Route>
           </Switch>
         </main>
